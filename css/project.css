@@ -1,7 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+
+/***** Page setup *****/
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font: 17px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  border-bottom: 40px solid #dcd1b8;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1rem;
+}
+
+a {
+  color: #1c4a1c
+}
+
+/***** Header *****/
+
+header {
+  align-content: center;
+  background: url(../images/header-bg.jpg);
+  column-gap: 20px;
+  display: grid;
+  grid-template-areas: 
+    "logo text";
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  height: 200px;
+  justify-content: center;
+}
+
+h1 {
+  grid-area: text;
+  font: 5rem 'Noto Serif JP', serif;
+  margin: 0 0 1rem 0;
+}
+
+header p {
+  align-self: end;
+  grid-area: text;
+  margin: 0;
+}
+
+header img {
+  align-self: center;
+  grid-area: logo;
+  grid-column: 1 / 2;
+  margin-top: 1rem;
 }

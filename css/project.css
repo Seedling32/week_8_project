@@ -34,7 +34,8 @@ header {
   column-gap: 20px;
   display: grid;
   grid-template-areas: 
-    "logo text";
+    "logo h1"
+    "logo paragraph";
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
   height: 200px;
@@ -42,14 +43,14 @@ header {
 }
 
 h1 {
-  grid-area: text;
+  grid-area: h1;
   font: 5rem 'Noto Serif JP', serif;
   margin: 0 0 1rem 0;
 }
 
 header p {
   align-self: end;
-  grid-area: text;
+  grid-area: paragraph;
   margin: 0;
 }
 

@@ -45,11 +45,12 @@ header {
 h1 {
   grid-area: h1;
   font: 5rem 'Noto Serif JP', serif;
-  margin: 0 0 1rem 0;
+  margin: 0;
 }
 
 header p {
   align-self: end;
+  font-family: 'Noto Serif JP', serif;
   grid-area: paragraph;
   margin: 0;
 }
@@ -59,4 +60,41 @@ header img {
   grid-area: logo;
   grid-column: 1 / 2;
   margin-top: 1rem;
+}
+
+/***** Navigation *****/
+
+nav {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#727272+0,0e0e0e+100 */
+  background: linear-gradient(to bottom,  #727272 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  box-shadow: 0 10px 10px -10px #000;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+li > a {
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin: 0 .5rem;
+  padding: .25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li:first-of-type > a {
+  margin-left: 0;
+}
+
+li:last-of-type > a {
+  margin-right: 0;
 }

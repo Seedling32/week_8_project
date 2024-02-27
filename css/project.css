@@ -44,13 +44,12 @@ header {
 
 h1 {
   grid-area: h1;
-  font: 5rem 'Noto Serif JP', serif;
+  font: 5rem 'Palatino Linotype', serif;
   margin: 0;
 }
 
 header p {
-  align-self: end;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Palatino Linotype', serif;
   grid-area: paragraph;
   margin: 0;
 }
@@ -71,17 +70,17 @@ nav {
   text-align: center;
 }
 
-ul {
-  padding: 0;
+nav ul {
   margin: 0;
 }
 
-li {
+nav li {
   display: inline-block;
+  list-style-type: none;
   padding: 1rem 0;
 }
 
-li > a {
+nav a {
   color: #fff;
   display: block;
   font-weight: bold;
@@ -97,4 +96,78 @@ li:first-of-type > a {
 
 li:last-of-type > a {
   margin-right: 0;
+}
+
+/***** Intro Row *****/
+
+#intro {
+  display: grid;
+  grid-template-columns: 4fr repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+#intro h2 {
+  text-transform: capitalize;
+}
+
+#intro img {
+  max-width: 100%;
+  height: auto;
+}
+
+#diver {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+#soccer {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+
+/***** Sample Row *****/
+
+#sample {
+  box-shadow: 0 14px 10px -14px #000,
+              0 -14px 10px -14px #000;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+#sample a {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dcd1b8+0,d6b775+100 */
+  background: linear-gradient(135deg,  #dcd1b8 0%,#d6b775 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+#sample a:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c3d374+0,d3ddba+100 */
+  background: linear-gradient(135deg,  #c3d374 0%,#d3ddba 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#sample a section {
+  align-content: center;
+  display: grid;
+  padding-left: .5rem;
+}
+
+#sample a h3 {
+  margin: 0;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#sample a p {
+  margin: 0;
+  text-decoration: underline;
+  text-transform: capitalize;
 }

@@ -10,8 +10,10 @@
 
   <body>
     <header role="banner">
-      <h1>Silhouet-Tees</h1>
-      <p>Moisture-wicking custom silhouette tee-shirts</p>
+      <div>
+        <h1>Silhouet-Tees</h1>
+        <p>Moisture-wicking custom silhouette tee-shirts</p>
+      </div>
       <img src="images/logo.svg" width="100" height="100" alt="Silhouet-Tees logo.">
     </header>
 
@@ -32,10 +34,24 @@
         </article>
 
           <div id="diver">
-            <img src="images/diver-305.png" alt="Yellow shirt with scuba-diver silhouette.">
+            <img src="images/diver-305.png" alt="Yellow shirt with scuba-diver silhouette."
+                 srcset="images/diver-305.png 305w,
+                         images/diver-610.png 610w,
+                         images/diver-915.png 915w,
+                         images/diver-1650.png 1650w"
+                 sizes="(min-width: 851px) 305px,
+                        (max-width: 490px) 305px,
+                        (max-width: 850px) 610px">
           </div>
           <div id="soccer">
-            <img src="images/soccer-305.png" alt="Orange shirt with soccer player silhouette.">
+            <img src="images/soccer-305.png" alt="Orange shirt with soccer player silhouette."
+                 srcset="images/soccer-305.png 305w,
+                         images/soccer-610.png 610w,
+                         images/soccer-915.png 915w,
+                         images/soccer-1650.png 1650w"
+                 sizes="(min-width: 851px) 305px,
+                        (max-width: 490px) 305px,
+                        (max-width: 850px) 610px">
           </div>
       </section>
 
@@ -66,26 +82,29 @@
       </section>
 
       <section id="about">
-        <article>
-          <section>
+        <section>
+          <article>
             <h2>About us</h2>
-            <p>In the winter of 1993 Fred Hentz drove to Harpers Ferry, WV with the first ever Silhouet-Tees tee shirt designs in the back of his car. Fred walked into the headquarters of the Appalachian Trail Conference's headquarters and cold called ATC's man of many hats Barry Queene. All of our hopes and dreams for a successful new business were hanging in the balance. Learn more about us</p>
-          </section>
+            <p>In the winter of 1993 Fred Hentz drove to Harpers Ferry, <abbr title="West Virginia">WV</abbr> with the first ever Silhouet-Tees tee shirt designs in the back of his car. Fred walked into the headquarters of the Appalachian Trail Conference's headquarters and cold called ATC's man of many hats Barry Queene. All of our hopes and dreams for a successful new business were hanging in the balance.</p>
+          </article>
+
           <div>
             <img src="images/logo.svg" width="100" height="100" alt="Silhouet-Tees logo.">
             <a href="#">Learn more about us.</a>
           </div>
-        </article>
-        <article>
-          <section>
+        </section>
+
+        <section>
+          <article>
             <h2>About the shirts</h2>
-            <p>The Silhouet-Tees Moisture Wicking Tee is manufactured using 100% spun polyester and delivers the look and feel of organic cotton and the wickability of advanced poly-performance fibers. Learn more about our shirts</p>
-          </section>
+            <p>The Silhouet-Tees Moisture Wicking Tee is manufactured using 100% spun polyester and delivers the look and feel of organic cotton and the wickability of advanced poly-performance fibers.</p>
+          </article>
+
           <div>
             <img src="images/dancer-100.png" width="100" height="134" alt="Green shirt with a ballet dancer's silhouette.">
             <a href="#">Learn more about our shirts</a>
           </div>
-        </article>
+        </section>
       </section>
     </main>    
   </body>

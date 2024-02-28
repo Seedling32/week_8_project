@@ -151,7 +151,7 @@ li:last-of-type {
   background: linear-gradient(135deg,  #c3d374 0%,#d3ddba 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-#sample a section {
+#sample a div {
   align-content: center;
   display: grid;
   padding-left: .5rem;
@@ -168,4 +168,38 @@ li:last-of-type {
   margin: 0;
   text-decoration: underline;
   text-transform: capitalize;
+}
+
+
+/***** About Us *****/
+
+#about {
+  display: flex;
+  gap: 4rem;
+}
+
+#about article {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+#about section {
+  flex: 1;
+}
+
+#about h2,
+#about p {
+  margin: 0;
+}
+
+#about div {
+  display: flex;
+  flex-basis: content;
+  flex-direction: column;
+}
+
+#about img {
+  height: auto;
+  max-width: 100%;
 }

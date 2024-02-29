@@ -30,29 +30,41 @@
       <section id="intro">
         <article>
           <h2>Great graphics meet field tested moisture wicking tees</h2>
-          <p>Welcome to Silhouet-Tees. We have merged our test of time outdoor graphics with top quality moisture wicking apparel and trend forward printing technologies. Our destination graphics touch the pulse and passion of a wide spectrum of outdoor enthusiasts. Our garments are manufactured with performance, comfort and function in mind. Our printing processes almost exclusively utilize water based inks and all are environment friendly. Our products are phthalate free and in compliance with Consumer Product Safety Commission (<abbr title="Consumer Product Safety Commission">CPSC</abbr>) Standards.</p>
+          <p>Welcome to Silhouet-Tees. We have merged our test of time outdoor graphics with top quality moisture wicking apparel and trend forward printing technologies. Our destination graphics touch the pulse and passion of a wide spectrum of outdoor enthusiasts. Our garments are manufactured with performance, comfort and function in mind. Our printing processes almost exclusively utilize water based inks and all are environment friendly. Our products are phthalate free and in compliance with Consumer Product Safety Commission (CPSC) Standards.</p>
         </article>
 
           <div id="diver">
-            <img src="images/diver-305.png" alt="Yellow shirt with scuba-diver silhouette."
-                 srcset="images/diver-305.png 305w,
-                         images/diver-610.png 610w,
-                         images/diver-915.png 915w,
-                         images/diver-1650.png 1650w"
-                 sizes="(min-width: 851px) 305px,
-                        (max-width: 501px) 457px,                        
-                        (max-width: 850px) 610px">
+            <picture>
+              <source srcset="images/diver-305.png,
+                              images/diver-610.png 2x,
+                              images/diver-915.png 3x"
+                      media="(max-width: 499px)">
+              <source srcset="images/diver-305.png 305w,
+                              images/diver-610.png 610w,
+                              images/diver-915.png 915w,
+                              images/diver-1650.png 1650w"
+                      sizes="(min-width: 851px) 305px,
+                             (max-width: 501px) 457px, 
+                             (max-width:850px) 610px">
+              <img src="images/diver-305.png" alt="Yellow shirt with scuba-diver silhouette.">
+            </picture>
           </div>
           
           <div id="soccer">
-            <img src="images/soccer-305.png" alt="Orange shirt with soccer player silhouette."
-                 srcset="images/soccer-305.png 305w,
-                         images/soccer-610.png 610w,
-                         images/soccer-915.png 915w,
-                         images/soccer-1650.png 1650w"
-                 sizes="(min-width: 851px) 305px,
-                        (max-width: 501px) 457px,
-                        (max-width: 850px) 610px">
+            <picture>
+              <source srcset="images/soccer-305.png,
+                              images/soccer-610.png 2x,
+                              images/soccer-915.png 3x" 
+                      media="(max-width: 499px)">
+              <source srcset="images/soccer-305.png 305w,
+                              images/soccer-610.png 610w,
+                              images/soccer-915.png 915w,
+                              images/soccer-1650.png 1650w" 
+                      sizes="(min-width: 851px) 305px,
+                             (max-width: 501px) 457px, 
+                             (max-width:850px) 610px">
+              <img src="images/soccer-305.png" alt="Orange shirt with soccer player silhouette.">
+            </picture>
           </div>
       </section>
 

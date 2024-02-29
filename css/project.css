@@ -235,11 +235,11 @@ li:last-of-type {
   }
 
   #about article {
-    flex: 4;    
+    flex: 1;    
   }
 
   #about div {
-    flex: 1;
+    flex: .5;
   }
 }
 

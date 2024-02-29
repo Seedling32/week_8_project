@@ -181,7 +181,11 @@ li:last-of-type {
   gap: 10px;
 }
 
-#about h2,
+#about h2 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
 #about p {
   margin: 0;
 }
